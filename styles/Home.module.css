@@ -8,7 +8,7 @@
 }
 
 .main {
-  padding: 5rem 0;
+  padding: 0;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -35,6 +35,29 @@
   align-items: center;
 }
 
+.heroBackground:before {
+  z-index:1;
+  content:'';
+  background-image: linear-gradient(to bottom, rgba(81, 84, 102, 0.52), rgba(105, 27, 21, 0.73));
+  background-size: cover;
+  background-position: center;
+}
+.heroBackground {
+  z-index:0;
+  padding: 1rem;
+  height: 200px;
+  text-align: center;
+}
+
+.heroTitle, .heroDescription, .logoContainer {
+  z-index:2;
+  position: relative;
+  color:#000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .title a {
   color: #0070f3;
   text-decoration: none;
@@ -51,6 +74,7 @@
   line-height: 1.15;
   font-size: 4rem;
 }
+
 
 .title,
 .description {
