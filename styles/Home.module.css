@@ -214,9 +214,7 @@
 
 @media (max-width: 426px) {
 
-  
-  
-  .logoContainer {
+    .logoContainer {
     z-index: 2;
     /*position: absolute;*/
     display: flex;
