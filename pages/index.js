@@ -24,7 +24,7 @@ export default function Home() {
              //width={'auto'}
             // height= {200}
             />
-  </div>*/}
+          </div>*/}
            <div className={styles.logoNav}>
             <div className={styles.logoContainer} style={{margin:'0 auto', textAlign:'center'}}>
               <svg width="180" height="173" viewBox="0 0 2309 2221" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -45,19 +45,25 @@ export default function Home() {
             <div className={styles.tagLine}>
               {/*<h1 className={styles.heroTitle}>
                   Welcome to Fired Pizza
-</h1>*/}
+                  </h1>*/}
               <p className={styles.tagLineDescription}>
               Mobile pizzeria specializing in neapolitan style pizza, specialty cannolis and more
               </p>
             </div>
-          </div>
-           
-          
+          </div>      
         </div>
+        <div className={styles.whoAreWe}>
+          <div className={styles.whoAreWeImg}>
+            <img src="/images/chris-and-amber.jpg" />
+          </div>
+          <div className={styles.whoAreWeWelcomeText}>
+            <h3 className="title">Who are we?</h3>
+            <p>We are Chris and Amber and we are passionate about serving tasty food in St Francois County.</p>
+            <button>Read More</button>
+          </div>
+        </div>        
 
-        
-
-        <div className="welcome-container">
+      {/*}  <div className="welcome-container">
           <ul style={{listStyle:'none', display:'flex', justifyContent:'space-between'}}>
             <li style={{margin: '10px'}}>
               <a href="https://www.facebook.com/firedsfc" target="_blank">
@@ -84,7 +90,7 @@ export default function Home() {
             </li>
           </ul>
         </div>
-
+                */}
 
 
         {/* <div className={styles.grid}>
