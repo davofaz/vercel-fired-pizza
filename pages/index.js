@@ -14,17 +14,7 @@ export default function Home() {
       <main className={styles.main}>
 
         <div className="header-container" style={{width:'100vw'}}>
-          {/*div className="hero-image" style={{background:'#000', height: '200px'}}>
-            <Image
-              className={styles.heroBackground}
-              src='/images/fired-pizza-selection.jpg'
-              layout="fill"
-              objectFit='fill'
-              objectPosition='center'
-             //width={'auto'}
-            // height= {200}
-            />
-          </div>*/}
+          
            <div className={styles.logoNav}>
             <div className={styles.logoContainer} style={{margin:'0 auto', textAlign:'center'}}>
               <svg width="180" height="173" viewBox="0 0 2309 2221" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -42,19 +32,26 @@ export default function Home() {
                 </defs>
               </svg>
             </div>
-            <div className={styles.tagLine}>
+            <div className={styles.tagLineDescription}>
+              <p>Mobile pizzeria specializing in neapolitan style pizza, specialty cannolis and more</p>
+            </div>
+          </div>   
+          <div className={styles.tagLineBackground}>
               {/*<h1 className={styles.heroTitle}>
                   Welcome to Fired Pizza
-                  </h1>*/}
-              <p className={styles.tagLineDescription}>
-              Mobile pizzeria specializing in neapolitan style pizza, specialty cannolis and more
-              </p>
-            </div>
-          </div>      
+                  </h1>*/}              
+            </div>   
         </div>
         <div className={styles.whoAreWe}>
           <div className={styles.whoAreWeImg}>
-            <img src="/images/chris-and-amber.jpg" />
+            
+
+            <picture>
+            <source srcset="/images/chris-amber-diag-grad.jpg"
+            media="(min-width: 427px)" />
+           <img src="/images/chris-and-amber-2.jpg" alt="" />
+            </picture>
+            
           </div>
           <div className={styles.whoAreWeWelcomeText}>
             <h3 className="title">Who are we?</h3>
@@ -124,7 +121,7 @@ export default function Home() {
   </div>*/}
       </main>
 
-      <footer className={styles.footer}>
+      {/*<footer className={styles.footer}>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
@@ -133,7 +130,7 @@ export default function Home() {
           Powered by{' '}
           <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
         </a>
-      </footer>
+</footer>*/}
     </div>
   )
 }

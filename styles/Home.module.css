@@ -20,23 +20,23 @@
 
 .logoNav {
   margin:1rem 0 1rem  0;
-
-}
-
-.logoContainer {
   z-index: 2;
   position: absolute;
   display: flex;
   top: 10px;
-  left: 20px;
+  left: 8rem;
 }
 
-.tagLine {
+.logoContainer {
+  margin-top:10px;
+}
+
+.tagLineBackground {
   background-color: #fff;
   height: 80px;
   z-index: 1;
   position: absolute;
-  top: 60px;
+  top: 70px;
   left: 0;
   width: 100%;
 }
@@ -44,31 +44,30 @@
 .tagLineDescription {
   color: #DC3131;
   font-size: large;
-    z-index: 1;
-    position: relative;
-    top: 10px;
-    padding-left: 220px;
+  margin-top: 55px;
 }
 
 .whoAreWe {
   display:flex;
-  flex-direction:row-reverse;
-  margin-top:200px;
-  margin-bottom: 60px;
-  max-width:1200px;
-  text-align: center;
+  width:100%;
+  flex-direction:row;
+  margin-top:100px;
 
 }
 
 .whoAreWeImg {
-  max-width: 50%;
+  width: 100%;
+  /*background-image: url(/images/chris-amber-diag-grad.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;*/
+  flex: 1 1 auto;
   
 }
 
 .whoAreWeImg img {
   width:100%;
   height:auto;
-  padding:3rem;
+  
 }
 
 .whoAreWeWelcomeText h3 {
@@ -77,10 +76,10 @@
 }
 
 .whoAreWeWelcomeText {
-  max-width: 40%;
-  margin-right:10%;
-  padding:80px 40px;
-  max-width: 300px;
+  width: 40%;
+  text-align:center;
+  padding:200px 40px;
+  flex: 1 1 auto;
 
 }
 
@@ -225,51 +224,34 @@
   }
 }
 
-@media (max-width: 786px) {
+@media (max-width: 769px) {
 
   
   
-  .logoContainer {
-    z-index: 2;
-    position: absolute;
-    display: flex;
-    top: 20px;
-    left: 20px;
+  .logoNav {
+     left: 2rem;
   }
-  
-  .tagLine {
-    background-color: #fff;
-    height: 100px;
-    z-index: 1;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-  }
-  
+    
   .tagLineDescription {
-    color: #DC3131;
-    font-size: large;
-      z-index: 1;
-      position: relative;
-      top: 10px;
-      padding-left: 220px;
+    margin-top:42px;
   }
+
+  .whoAreWeWelcomeText {
+    padding: 40px
+  }
+
+
 
 }
 
 @media (max-width: 426px) {
 
-    .logoContainer {
-    z-index: 2;
-    /*position: absolute;*/
-    display: flex;
-    top: 10px;
-    left: 50%;
-    margin-left: -90px !important;
+    .logoNav{
+       flex-direction: column;
+       left:0;
   }
   
-  .tagLine {
+  .tagLineBackground {
     background-color: #fff;
     height: 260px;
     z-index: 1;
@@ -279,15 +261,33 @@
     width: 100%;
   }
   
-  .tagLineDescription {
-    color: #DC3131;
-    font-size: large;
-      z-index: 1;
-      position: relative;
-      top: 120px;
-    padding-left: 220px;
+  .tagLineDescription {     
+    margin-top:0;
     padding: 10px 30px;
     text-align: center;
   }
+
+  .whoAreWe {
+    flex-direction: column;
+    flex: 1 1 auto;
+    width: 426px;
+    margin-top:0;
+  }
+
+  .whoAreWeImg {
+    width: 100%;
+    margin-top:300px;
+    /*background-image: url(/images/chris-and-amber-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: 1;*/
+  }
+
+  .whoAreWeWelcomeText {
+    width: 100%;
+    padding:40px;
+    
+  }
+
 
 }
