@@ -61,7 +61,9 @@ export default function Home() {
              src="/images/chris-and-amber-2.jpg"
              width="966px"
              height="694"
-             layout="responsive" />
+             layout="responsive"
+             placeholder="blur"
+             />
             
             ) : (
              
@@ -70,7 +72,9 @@ export default function Home() {
               src="/images/chris-amber-diag-grad.jpg"
               width="966px"
               height="694"
-              layout="responsive" />
+              layout="responsive"
+              placeholder="blur"
+              />
               
             )
           

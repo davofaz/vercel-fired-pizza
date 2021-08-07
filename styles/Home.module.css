@@ -1,11 +1,6 @@
 .container {
   min-height: 100vh;
   min-width: 320px;
-  padding: 0 0.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-color: #DC3131;
   color: #fff;
 }
@@ -45,7 +40,8 @@
 .tagLineDescription {
   color: #DC3131;
   font-size: large;
-  margin-top: 55px;
+  display:flex;
+  align-items: center;
 }
 
 .whoAreWe {
@@ -53,14 +49,12 @@
   width:100%;
   flex-direction:row;
   margin-top:100px;
+  align-items: center;
 
 }
 
 .whoAreWeImg {
   width: 100%;
-  /*background-image: url(/images/chris-amber-diag-grad.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;*/
   flex: 1 1 auto;
   
 }
@@ -79,7 +73,7 @@
 .whoAreWeWelcomeText {
   width: 40%;
   text-align:center;
-  padding:200px 40px;
+  padding:40px;
   flex: 1 1 auto;
 
 }
@@ -225,22 +219,7 @@
   }
 }
 
-@media (max-width: 769px) {
 
-  
-  
-    
-  .tagLineDescription {
-    margin-top:42px;
-  }
-
-  .whoAreWeWelcomeText {
-    padding: 80px 40px
-  }
-
-
-
-}
 
 @media (max-width: 426px) {
 
@@ -274,10 +253,6 @@
   .whoAreWeImg {
     width: 100%;
     margin-top:300px;
-    /*background-image: url(/images/chris-and-amber-2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    flex: 1;*/
   }
 
   .whoAreWeWelcomeText {
