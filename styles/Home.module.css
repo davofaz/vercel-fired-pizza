@@ -1,5 +1,6 @@
 .container {
   min-height: 100vh;
+  min-width: 320px;
   padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
@@ -24,7 +25,7 @@
   position: absolute;
   display: flex;
   top: 10px;
-  left: 8rem;
+  left: 20px;
 }
 
 .logoContainer {
@@ -228,16 +229,13 @@
 
   
   
-  .logoNav {
-     left: 2rem;
-  }
     
   .tagLineDescription {
     margin-top:42px;
   }
 
   .whoAreWeWelcomeText {
-    padding: 40px
+    padding: 80px 40px
   }
 
 
@@ -270,7 +268,6 @@
   .whoAreWe {
     flex-direction: column;
     flex: 1 1 auto;
-    width: 426px;
     margin-top:0;
   }
 
