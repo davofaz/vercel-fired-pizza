@@ -59,7 +59,7 @@ export default function Home() {
           { width <626 ? (
              <Image 
              src="/images/chris-and-amber-2.jpg"
-             width="966px"
+             width="966"
              height="694"
              layout="responsive"
              placeholder="blur"
@@ -70,7 +70,7 @@ export default function Home() {
 
               <Image 
               src="/images/chris-amber-diag-grad.jpg"
-              width="966px"
+              width="966"
               height="694"
               layout="responsive"
               placeholder="blur"
@@ -135,7 +135,72 @@ export default function Home() {
               </ul>
             </div>            
             </div>
-            <div className={styles.menuPizzas}>Pizzas</div>
+            <div className={styles.menuPizzas}>
+              <div className={styles.menuPizzaItem}>
+                <div className={styles.menuPizzaItemTitle}>
+                  Pepperoni Rancher
+                </div>
+                <div className={styles.menuPizzaItemImage}>
+                  <Image 
+                    src="/images/pepperoni-rancher-pizza.jpg"
+                    width="397"
+                    height="582"
+                    alt="Pepperoni Rancher"
+                    layout="responsive"
+                    placeholder="blur"
+                  />
+                </div>
+              </div>
+
+              <div className={styles.menuPizzaItem}>
+                <div className={styles.menuPizzaItemTitle}>
+                  Pepperoni Rancher
+                </div>
+                <div className={styles.menuPizzaItemImage}>
+                  <Image 
+                    src="/images/pepperoni-rancher-pizza.jpg"
+                    width="397"
+                    height="582"
+                    alt="Pepperoni Rancher"
+                    layout="responsive"
+                    placeholder="blur"
+                  />
+                </div>
+              </div>
+
+              <div className={styles.menuPizzaItem}>
+                <div className={styles.menuPizzaItemTitle}>
+                  Pepperoni Rancher
+                </div>
+                <div className={styles.menuPizzaItemImage}>
+                  <Image 
+                    src="/images/pepperoni-rancher-pizza.jpg"
+                    width="397"
+                    height="582"
+                    alt="Pepperoni Rancher"
+                    layout="responsive"
+                    placeholder="blur"
+                  />
+                </div>
+              </div>
+
+              <div className={styles.menuPizzaItem}>
+                <div className={styles.menuPizzaItemTitle}>
+                  Pepperoni Rancher
+                </div>
+                <div className={styles.menuPizzaItemImage}>
+                  <Image 
+                    src="/images/pepperoni-rancher-pizza.jpg"
+                    width="397"
+                    height="582"
+                    alt="Pepperoni Rancher"
+                    layout="responsive"
+                    placeholder="blur"
+                  />
+                </div>
+              </div>
+              
+            </div>
         </div>    
 
         {/* <div className={styles.grid}>
