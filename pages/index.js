@@ -89,7 +89,25 @@ export default function Home() {
             {/*<p>Width: {width}</p>
             <p>Height: {height}</p>*/}
           </div>
-        </div>        
+        </div> 
+        <div className="bgWrap">
+          <Image
+            alt="menu"
+            src="/images/menu-marble-background.jpg"
+            layout="fill"
+            objectFit="cover"
+            quality={100}
+          />            
+        </div>
+        <div className={styles.menuSection}>
+          <div className={styles.menuText}>
+            <h3>Menu</h3>
+              <p>Our pizzas are freshly made  and cooked to order using the best ingredients.</p>
+              <p>We serve our signature ‘Fired’ Pizza and two other speciality pizzas each weekend unique to that day.</p>
+              <p><strong>Like our Facebook page to find out more.</strong></p>
+            </div>
+            <div className={styles.menuPizzas}>Pizzas</div>
+        </div>    
 
       {/*}  <div className="welcome-container">
           <ul style={{listStyle:'none', display:'flex', justifyContent:'space-between'}}>
