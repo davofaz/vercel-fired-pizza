@@ -65,7 +65,7 @@
   
 }
 
-.whoAreWeWelcomeText h3 {
+.whoAreWeWelcomeText h3, .menuSection h3 {
   font-weight: 100;
   font-size: x-large;
 }
@@ -89,7 +89,6 @@
 }
 
 .menuSection {
-  height:100vh;
   width:100vw;
   background-color: lightgrey;
   background-image: url('/images/menu-marble-background.jpg');
@@ -98,21 +97,48 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding:30px;
 
 }
 
 .menuText {
-   border:0;
-   flex: 1;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.menuIntro {
+   
    background: #333;
    opacity: 0.7;
    padding: 30px;
-   margin: 30px;
    border-top-left-radius: 15px;
    border-top-right-radius: 15px;
    text-align: center;
 }
 
+.menuSocialMediaFooter {
+    background: whitesmoke;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    height:110px;
+}
+
+.menuSocialMediaFooter ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.menuSocialMediaFooter li {
+  margin: 10px;
+}
+
+.menuSocialMediaFooter a {
+  display: block;
+}
 
 .menuPizzas {
   border:0;
