@@ -318,5 +318,13 @@
     
   }
 
+  .menuSection {
+    padding:0;
+    flex-direction: column;  
+  }
+
+  .menuIntro, .menuSocialMediaFooter {
+    border-radius:0;
+  }
 
 }
