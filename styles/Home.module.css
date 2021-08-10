@@ -89,7 +89,7 @@
 }
 
 .menuSection {
-  width:100vw;
+  
   background-color: lightgrey;
   background-image: url('/images/menu-marble-background.jpg');
   background-repeat: no-repeat;
@@ -151,13 +151,20 @@
   flex-wrap: wrap;
 }
 .menuPizzas > div {
-  flex: 50%;
+  flex: 40%;
+
 }
+
 
 .menuPizzaItem {  
   width:180px;
   padding:20px;
 
+}
+
+.menuPizzaItem div div {
+
+    overflow: visible !important;
 }
 
 .menuPizzaItem img {
