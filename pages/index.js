@@ -154,14 +154,14 @@ export default function Home() {
 
               <div className={styles.menuPizzaItem}>
                 <div className={styles.menuPizzaItemTitle}>
-                  Pepperoni Rancher
+                  French Dip
                 </div>
                 <div className={styles.menuPizzaItemImage}>
                   <Image 
-                    src="/images/pepperoni-rancher-pizza.jpg"
+                    src="/images/french-dip.jpg"
                     width="397"
                     height="582"
-                    alt="Pepperoni Rancher"
+                    alt="French Dip"
                     layout="responsive"
                     placeholder="blur"
                   />
@@ -170,14 +170,14 @@ export default function Home() {
 
               <div className={styles.menuPizzaItem}>
                 <div className={styles.menuPizzaItemTitle}>
-                  Pepperoni Rancher
+                   Street Corn
                 </div>
                 <div className={styles.menuPizzaItemImage}>
                   <Image 
-                    src="/images/pepperoni-rancher-pizza.jpg"
+                    src="/images/street-corn.jpg"
                     width="397"
                     height="582"
-                    alt="Pepperoni Rancher"
+                    alt="Street Corn"
                     layout="responsive"
                     placeholder="blur"
                   />
@@ -186,20 +186,20 @@ export default function Home() {
 
               <div className={styles.menuPizzaItem}>
                 <div className={styles.menuPizzaItemTitle}>
-                  Pepperoni Rancher
+                   The Spicy 'roni
                 </div>
                 <div className={styles.menuPizzaItemImage}>
                   <Image 
-                    src="/images/pepperoni-rancher-pizza.jpg"
+                    src="/images/the-spicy-roni.jpg"
                     width="397"
                     height="582"
-                    alt="Pepperoni Rancher"
+                    alt="The Spicy 'roni"
                     layout="responsive"
                     placeholder="blur"
                   />
                 </div>
               </div>
-              
+
             </div>
         </div>    
 

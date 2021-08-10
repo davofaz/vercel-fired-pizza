@@ -162,6 +162,7 @@
 
 .menuPizzaItem img {
   border-bottom-left-radius: 60px;
+  box-shadow: 0 6px 6px #333;
 }
 
 .menuPizzaItemTitle {
