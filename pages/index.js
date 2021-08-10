@@ -59,7 +59,7 @@ export default function Home() {
           { width <626 ? (
              <Image 
              src="/images/chris-and-amber-2.jpg"
-             width="966px"
+             width="966"
              height="694"
              layout="responsive"
              placeholder="blur"
@@ -70,7 +70,7 @@ export default function Home() {
 
               <Image 
               src="/images/chris-amber-diag-grad.jpg"
-              width="966px"
+              width="966"
               height="694"
               layout="responsive"
               placeholder="blur"
@@ -83,43 +83,125 @@ export default function Home() {
                      
           </div>
           <div className={styles.whoAreWeWelcomeText}>
-            <h3 className="title">Who are we?</h3>
+            <h3>Who are we?</h3>
             <p>We are Chris and Amber and we are passionate about serving tasty food in St Francois County.</p>
             <button>Read More</button>
             {/*<p>Width: {width}</p>
             <p>Height: {height}</p>*/}
           </div>
-        </div>        
+        </div> 
+        {/*<div className="bgWrap">
+          <Image
+            alt="menu"
+            src="/images/menu-marble-background.jpg"
+            layout="fill"
+            objectFit="cover"
+            quality={100}
+          />            
+          </div>*/}
+        <div className={styles.menuSection}>
+          <div className={styles.menuText}>
+            <div className={styles.menuIntro}>
+              <h3>Menu</h3>
+                <p>Our pizzas are freshly made  and cooked to order using the best ingredients.</p>
+                <p>We serve our signature ‘Fired’ Pizza and two other speciality pizzas each weekend unique to that day.</p>
+                <p><strong>Like our Facebook page to find out more.</strong></p>
+            </div>
+            <div className={styles.menuSocialMediaFooter}>
+              <ul>
+                <li>
+                  <a href="https://www.facebook.com/firedsfc" target="_blank">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="20" cy="20" r="20" fill="#4E6297"/>
+                      <path d="M29 13.8186C29 12.3212 27.6788 11 26.1813 11H14.8186C13.3212 11 12 12.3212 12 13.8186V25.1813C12 26.6787 13.3212 28 14.8186 28H20.544V21.5699H18.4301V18.7513H20.544V17.6062C20.544 15.6684 21.9534 13.9948 23.715 13.9948H26.0052V16.8135H23.715C23.4508 16.8135 23.1865 17.0777 23.1865 17.6062V18.7513H26.0052V21.5699H23.1865V28H26.1813C27.6788 28 29 26.6787 29 25.1813V13.8186Z" fill="white"/>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/firedsfc/" target="_blank">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="20" cy="20" r="20" fill="url(#paint0_linear)"/>
+                      <path d="M26.5808 12H14.4192C13.0462 12 12 13.0462 12 14.4192V26.5808C12 27.9538 13.0462 29 14.4192 29H26.5808C27.9538 29 29 27.9538 29 26.5808V14.4192C29 13.0462 27.9538 12 26.5808 12ZM20.5 25.6C23.3115 25.6 25.6 23.3769 25.6 20.6962C25.6 20.2385 25.5346 19.7154 25.4038 19.3231H26.8423V26.2538C26.8423 26.5808 26.5808 26.9077 26.1885 26.9077H14.8115C14.4846 26.9077 14.1577 26.6462 14.1577 26.2538V19.2577H15.6615C15.5308 19.7154 15.4654 20.1731 15.4654 20.6308C15.4 23.3769 17.6885 25.6 20.5 25.6ZM20.5 23.6385C18.6692 23.6385 17.2308 22.2 17.2308 20.4346C17.2308 18.6692 18.6692 17.2308 20.5 17.2308C22.3308 17.2308 23.7692 18.6692 23.7692 20.4346C23.7692 22.2654 22.3308 23.6385 20.5 23.6385ZM26.7769 16.6423C26.7769 17.0346 26.45 17.3615 26.0577 17.3615H24.2269C23.8346 17.3615 23.5077 17.0346 23.5077 16.6423V14.8769C23.5077 14.4846 23.8346 14.1577 24.2269 14.1577H26.0577C26.45 14.1577 26.7769 14.4846 26.7769 14.8769V16.6423Z" fill="white"/>
+                      <defs>
+                      <linearGradient id="paint0_linear" x1="8.5" y1="35.5" x2="35" y2="8" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#EEA054"/>
+                      <stop offset="0.502762" stop-color="#D64763"/>
+                      <stop offset="1" stop-color="#B62A99"/>
+                      </linearGradient>
+                      </defs>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>            
+            </div>
+            <div className={styles.menuPizzas}>
+              <div className={styles.menuPizzaItem}>
+                <div className={styles.menuPizzaItemTitle}>
+                  Pepperoni Rancher
+                </div>
+                <div className={styles.menuPizzaItemImage}>
+                  <Image 
+                    src="/images/pepperoni-rancher-pizza.jpg"
+                    width="397"
+                    height="582"
+                    alt="Pepperoni Rancher"
+                    layout="responsive"
+                    placeholder="blur"
+                  />
+                </div>
+              </div>
 
-      {/*}  <div className="welcome-container">
-          <ul style={{listStyle:'none', display:'flex', justifyContent:'space-between'}}>
-            <li style={{margin: '10px'}}>
-              <a href="https://www.facebook.com/firedsfc" target="_blank">
-                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="20" cy="20" r="20" fill="#4E6297"/>
-                  <path d="M29 13.8186C29 12.3212 27.6788 11 26.1813 11H14.8186C13.3212 11 12 12.3212 12 13.8186V25.1813C12 26.6787 13.3212 28 14.8186 28H20.544V21.5699H18.4301V18.7513H20.544V17.6062C20.544 15.6684 21.9534 13.9948 23.715 13.9948H26.0052V16.8135H23.715C23.4508 16.8135 23.1865 17.0777 23.1865 17.6062V18.7513H26.0052V21.5699H23.1865V28H26.1813C27.6788 28 29 26.6787 29 25.1813V13.8186Z" fill="white"/>
-                </svg>
-              </a>
-            </li>
-            <li style={{margin: '10px'}}>
-              <a href="https://www.instagram.com/firedsfc/" target="_blank">
-                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="20" cy="20" r="20" fill="url(#paint0_linear)"/>
-                  <path d="M26.5808 12H14.4192C13.0462 12 12 13.0462 12 14.4192V26.5808C12 27.9538 13.0462 29 14.4192 29H26.5808C27.9538 29 29 27.9538 29 26.5808V14.4192C29 13.0462 27.9538 12 26.5808 12ZM20.5 25.6C23.3115 25.6 25.6 23.3769 25.6 20.6962C25.6 20.2385 25.5346 19.7154 25.4038 19.3231H26.8423V26.2538C26.8423 26.5808 26.5808 26.9077 26.1885 26.9077H14.8115C14.4846 26.9077 14.1577 26.6462 14.1577 26.2538V19.2577H15.6615C15.5308 19.7154 15.4654 20.1731 15.4654 20.6308C15.4 23.3769 17.6885 25.6 20.5 25.6ZM20.5 23.6385C18.6692 23.6385 17.2308 22.2 17.2308 20.4346C17.2308 18.6692 18.6692 17.2308 20.5 17.2308C22.3308 17.2308 23.7692 18.6692 23.7692 20.4346C23.7692 22.2654 22.3308 23.6385 20.5 23.6385ZM26.7769 16.6423C26.7769 17.0346 26.45 17.3615 26.0577 17.3615H24.2269C23.8346 17.3615 23.5077 17.0346 23.5077 16.6423V14.8769C23.5077 14.4846 23.8346 14.1577 24.2269 14.1577H26.0577C26.45 14.1577 26.7769 14.4846 26.7769 14.8769V16.6423Z" fill="white"/>
-                  <defs>
-                  <linearGradient id="paint0_linear" x1="8.5" y1="35.5" x2="35" y2="8" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#EEA054"/>
-                  <stop offset="0.502762" stop-color="#D64763"/>
-                  <stop offset="1" stop-color="#B62A99"/>
-                  </linearGradient>
-                  </defs>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-                */}
+              <div className={styles.menuPizzaItem}>
+                <div className={styles.menuPizzaItemTitle}>
+                  French Dip
+                </div>
+                <div className={styles.menuPizzaItemImage}>
+                  <Image 
+                    src="/images/french-dip.jpg"
+                    width="397"
+                    height="582"
+                    alt="French Dip"
+                    layout="responsive"
+                    placeholder="blur"
+                  />
+                </div>
+              </div>
 
+              <div className={styles.menuPizzaItem}>
+                <div className={styles.menuPizzaItemTitle}>
+                   Street Corn
+                </div>
+                <div className={styles.menuPizzaItemImage}>
+                  <Image 
+                    src="/images/street-corn.jpg"
+                    width="397"
+                    height="582"
+                    alt="Street Corn"
+                    layout="responsive"
+                    placeholder="blur"
+                  />
+                </div>
+              </div>
+
+              <div className={styles.menuPizzaItem}>
+                <div className={styles.menuPizzaItemTitle}>
+                   The Spicy 'roni
+                </div>
+                <div className={styles.menuPizzaItemImage}>
+                  <Image 
+                    src="/images/the-spicy-roni.jpg"
+                    width="397"
+                    height="582"
+                    alt="The Spicy 'roni"
+                    layout="responsive"
+                    placeholder="blur"
+                  />
+                </div>
+              </div>
+
+            </div>
+        </div>    
 
         {/* <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
