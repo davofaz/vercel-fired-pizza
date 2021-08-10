@@ -358,7 +358,26 @@
 
   .menuSection {
     padding:0;
-    flex-direction: column;  
+    flex-direction: column;
+    width:100%;
+    align-items: normal;
+  }
+
+  .menuPizzas {
+    width:100%;
+    display:inline-block !important;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    vertical-align: middle;
+  }
+
+.menuPizzas > div {
+  flex: 100%;
+}
+  .menuPizzaItem {
+   width:300px;
+   display:inline-block;
   }
 
   .menuIntro, .menuSocialMediaFooter {
