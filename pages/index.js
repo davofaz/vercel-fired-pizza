@@ -256,7 +256,7 @@ export default function Home() {
               <p>Fired Pizza SFC</p>
             </div>
         <br /><br />
-        <p className={styles.footerCredit}>Built by FAZAA</p>
+        <p className={styles.footerCredit}><a href="https://fazaa.xyz" target="_blank">Built by FAZAA</a></p>
 </footer>
     </div>
   )
