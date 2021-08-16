@@ -1,7 +1,7 @@
 .container {
   min-height: 100vh;
   min-width: 320px;
-  background-color: #DC3131;
+  background-image: linear-gradient( to right, #dc3131, #f24949,#dc3131 );
   color: #fff;
 }
 
@@ -50,6 +50,7 @@
   flex-direction:row;
   margin-top:100px;
   align-items: center;
+  background-color: #dd3130;
 
 }
 
@@ -376,6 +377,7 @@
     flex-direction: column;
     flex: 1 1 auto;
     margin-top:0;
+    background-image: linear-gradient( to right, #dc3131, #f24949,#dc3131 );
   }
 
   .whoAreWeImg {

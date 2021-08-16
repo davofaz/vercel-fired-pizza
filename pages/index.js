@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import UseWindowDimensions from '../components/UseWindowDimensions'
+import { motion } from 'framer-motion'
 
 
 export default function Home() {
@@ -18,10 +19,15 @@ export default function Home() {
 
       <main className={styles.main}>
 
-        <div className="header-container" style={{width:'100vw'}}>
+        <div className="header-container" style={{ width:'100vw' }}>
           
-           <div className={styles.logoNav}>
-            <div className={styles.logoContainer} style={{margin:'0 auto', textAlign:'center'}}>
+           <div className={ styles.logoNav }>
+            <motion.div 
+              className={ styles.logoContainer } 
+              style={{ margin:'0 auto', textAlign:'center' }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1}}
+              transition={{delay:0.1}}>
               <svg width="180" height="173" viewBox="0 0 2309 2221" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clipPath="url(#clip0)">
                 <circle cx="1137.79" cy="1128.79" r="974.788" stroke="white" strokeWidth="85"/>
@@ -36,7 +42,7 @@ export default function Home() {
                 </clipPath>
                 </defs>
               </svg>
-            </div>
+            </motion.div>
             <div className={styles.tagLineDescription}>
               <p>Mobile pizzeria specializing in neapolitan style pizza, specialty cannolis and more</p>
             </div>
@@ -47,7 +53,8 @@ export default function Home() {
                   </h1>*/}              
             </div>   
         </div>
-        <div className={styles.whoAreWeSection}>
+        <div 
+          className={styles.whoAreWeSection}>
           <div className={styles.whoAreWeImg}>
             
 { /*}
@@ -82,13 +89,21 @@ export default function Home() {
 
                      
           </div>
-          <div className={styles.whoAreWeWelcomeText}>
+          <motion.div 
+            className={styles.whoAreWeWelcomeText}
+            initial={{ opacity: 0}}
+            animate={{ opacity: 1}}
+            transition={{delay:0.2}}>
+
             <h3>Who are we?</h3>
             <p>We are Chris and Amber and we are passionate about serving tasty food in St Francois County.</p>
-            <button>Read More</button>
+            <motion.button
+              whileHover={{ scale: 1.5 }}
+              whileTap={{ scale: 0.9 }}
+            >Read More</motion.button>
             {/*<p>Width: {width}</p>
             <p>Height: {height}</p>*/}
-          </div>
+          </motion.div>
         </div> 
         <div className={styles.menuSection}>
           
@@ -129,7 +144,11 @@ export default function Home() {
             </div>            
             </div>
             <div className={styles.menuPizzas}>
-              <div className={styles.menuPizzaItem}>
+              <motion.div 
+                 className={styles.menuPizzaItem}
+                 whileHover={{ scale: 1.1 }}
+                 whileTap={{ scale: 0.9 }}
+              >
                 <div className={styles.menuPizzaItemTitle}>
                   Pepperoni Rancher
                 </div>
@@ -143,9 +162,13 @@ export default function Home() {
                     placeholder="blur"
                   />
                 </div>
-              </div>
+              </motion.div>
 
-              <div className={styles.menuPizzaItem}>
+              <motion.div 
+                 className={styles.menuPizzaItem}
+                 whileHover={{ scale: 1.1 }}
+                 whileTap={{ scale: 0.9 }}
+              >
                 <div className={styles.menuPizzaItemTitle}>
                   French Dip
                 </div>
@@ -159,9 +182,13 @@ export default function Home() {
                     placeholder="blur"
                   />
                 </div>
-              </div>
+              </motion.div>
 
-              <div className={styles.menuPizzaItem}>
+              <motion.div 
+                 className={styles.menuPizzaItem}
+                 whileHover={{ scale: 1.1 }}
+                 whileTap={{ scale: 0.9 }}
+              >
                 <div className={styles.menuPizzaItemTitle}>
                    Street Corn
                 </div>
@@ -175,9 +202,13 @@ export default function Home() {
                     placeholder="blur"
                   />
                 </div>
-              </div>
+              </motion.div>
 
-              <div className={styles.menuPizzaItem}>
+              <motion.div 
+                 className={styles.menuPizzaItem}
+                 whileHover={{ scale: 1.1 }}
+                 whileTap={{ scale: 0.9 }}
+              >
                 <div className={styles.menuPizzaItemTitle}>
                    The Spicy 'roni
                 </div>
@@ -191,7 +222,7 @@ export default function Home() {
                     placeholder="blur"
                   />
                 </div>
-              </div>
+              </motion.div>
 
             </div>
         </div>    
@@ -237,7 +268,21 @@ export default function Home() {
       </main>
 
       <footer className={styles.footer}>
-        <div className={styles.footerLogo}>
+        <motion.div 
+          className={styles.footerLogo}
+          style={{ margin:'0 auto', textAlign:'center' }}
+          whileHover={{ 
+            scale: [1, 1.1, 1],
+            rotate: [0, 0, 360] }}
+          whileTap={{ scale: 0.9 }}
+          initial={{ opacity: 0 }}
+          animate={{ 
+            opacity: 1,
+            scale: [1, 1.1, 1],
+            rotate: [0, 0, 360],
+          }}
+          transition={{delay:0.1}}
+        >
               <a href="#"><svg width="180" height="173" viewBox="0 0 2309 2221" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clipPath="url(#clip0)">
                 <circle cx="1137.79" cy="1128.79" r="974.788" stroke="white" strokeWidth="85"/>
@@ -253,8 +298,8 @@ export default function Home() {
                 </defs>
               </svg>
               </a>
-              <p>Fired Pizza SFC</p>
-            </div>
+            </motion.div>
+            <p>Fired Pizza SFC</p>
         <br /><br />
         <p className={styles.footerCredit}><a href="https://fazaa.xyz" target="_blank">Built by FAZAA</a></p>
 </footer>
