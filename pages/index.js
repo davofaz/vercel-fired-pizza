@@ -1,6 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 import UseWindowDimensions from '../components/UseWindowDimensions'
 import { motion } from 'framer-motion'
@@ -43,9 +44,14 @@ export default function Home() {
                 </defs>
               </svg>
             </motion.div>
-            <div className={styles.tagLineDescription}>
+            <motion.div 
+              className={styles.tagLineDescription}
+              initial={{ opacity: 0, x: 60}}
+              animate={{ opacity: 1, x: 0}}
+              transition={{delay:0.8}}
+            >
               <p>Mobile pizzeria specializing in neapolitan style pizza, specialty cannolis and more</p>
-            </div>
+            </motion.div>
           </div>   
           <div className={styles.tagLineBackground}>
               {/*<h1 className={styles.heroTitle}>
@@ -97,10 +103,12 @@ export default function Home() {
 
             <h3>Who are we?</h3>
             <p>We are Chris and Amber and we are passionate about serving tasty food in St Francois County.</p>
-            <motion.button
-              whileHover={{ scale: 1.5 }}
-              whileTap={{ scale: 0.9 }}
-            >Read More</motion.button>
+            
+            <Link href={"https://dailyjournalonline.com/entertainment/local/fired-a-new-choice-for-food-truck-lovers/article_8a3aa265-55a7-54c8-ae44-ce101dcf951b.html?fbclid=IwAR2sU33W2g-p6-FpKjmhOXo-oEWss5j17uSv0nNAbNh_cfZw2A3VjtwdECQ"}>
+              <a target="_blank"><motion.button whileHover={{ scale: 1.5 }}
+                whileTap={{ scale: 0.9 }}
+                className={styles.button}>Read More</motion.button></a>
+            </Link>
             {/*<p>Width: {width}</p>
             <p>Height: {height}</p>*/}
           </motion.div>
@@ -118,16 +126,22 @@ export default function Home() {
             <div className={styles.menuSocialMediaFooter}>
               <ul>
                 <li>
-                  <a href="https://www.facebook.com/firedsfc" target="_blank">
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <Link href="https://www.facebook.com/firedsfc">
+                    <a target="_blank"><motion.svg 
+                       whileHover={{ scale: 1.5 }}
+                       whileTap={{ scale: 0.9 }} width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <circle cx="20" cy="20" r="20" fill="#4E6297"/>
                       <path d="M29 13.8186C29 12.3212 27.6788 11 26.1813 11H14.8186C13.3212 11 12 12.3212 12 13.8186V25.1813C12 26.6787 13.3212 28 14.8186 28H20.544V21.5699H18.4301V18.7513H20.544V17.6062C20.544 15.6684 21.9534 13.9948 23.715 13.9948H26.0052V16.8135H23.715C23.4508 16.8135 23.1865 17.0777 23.1865 17.6062V18.7513H26.0052V21.5699H23.1865V28H26.1813C27.6788 28 29 26.6787 29 25.1813V13.8186Z" fill="white"/>
-                    </svg>
-                  </a>
+                    </motion.svg>
+                    </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="https://www.instagram.com/firedsfc/" target="_blank">
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <Link href="https://www.instagram.com/firedsfc/">
+                  <a target="_blank">
+                    <motion.svg
+                      whileHover={{ scale: 1.5 }}
+                      whileTap={{ scale: 0.9 }} width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <circle cx="20" cy="20" r="20" fill="url(#paint0_linear)"/>
                       <path d="M26.5808 12H14.4192C13.0462 12 12 13.0462 12 14.4192V26.5808C12 27.9538 13.0462 29 14.4192 29H26.5808C27.9538 29 29 27.9538 29 26.5808V14.4192C29 13.0462 27.9538 12 26.5808 12ZM20.5 25.6C23.3115 25.6 25.6 23.3769 25.6 20.6962C25.6 20.2385 25.5346 19.7154 25.4038 19.3231H26.8423V26.2538C26.8423 26.5808 26.5808 26.9077 26.1885 26.9077H14.8115C14.4846 26.9077 14.1577 26.6462 14.1577 26.2538V19.2577H15.6615C15.5308 19.7154 15.4654 20.1731 15.4654 20.6308C15.4 23.3769 17.6885 25.6 20.5 25.6ZM20.5 23.6385C18.6692 23.6385 17.2308 22.2 17.2308 20.4346C17.2308 18.6692 18.6692 17.2308 20.5 17.2308C22.3308 17.2308 23.7692 18.6692 23.7692 20.4346C23.7692 22.2654 22.3308 23.6385 20.5 23.6385ZM26.7769 16.6423C26.7769 17.0346 26.45 17.3615 26.0577 17.3615H24.2269C23.8346 17.3615 23.5077 17.0346 23.5077 16.6423V14.8769C23.5077 14.4846 23.8346 14.1577 24.2269 14.1577H26.0577C26.45 14.1577 26.7769 14.4846 26.7769 14.8769V16.6423Z" fill="white"/>
                       <defs>
@@ -137,8 +151,9 @@ export default function Home() {
                       <stop offset="1" stop-color="#B62A99"/>
                       </linearGradient>
                       </defs>
-                    </svg>
+                    </motion.svg>
                   </a>
+                </Link>
                 </li>
               </ul>
             </div>            
@@ -277,9 +292,7 @@ export default function Home() {
           whileTap={{ scale: 0.9 }}
           initial={{ opacity: 0 }}
           animate={{ 
-            opacity: 1,
-            scale: [1, 1.1, 1],
-            rotate: [0, 0, 360],
+            opacity: 1
           }}
           transition={{delay:0.1}}
         >

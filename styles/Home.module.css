@@ -79,7 +79,7 @@
 
 }
 
-.whoAreWeWelcomeText button {
+.whoAreWeWelcomeText .button {
   border-radius: 15px;
   background-color: #fff;
   color: #DC3131;
